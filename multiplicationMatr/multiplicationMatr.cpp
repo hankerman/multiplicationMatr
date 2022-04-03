@@ -82,8 +82,7 @@ int main()
     
     createMatr(matr, row, cols);
     createMatr(matr2, row2, cols2);
-    //createMatr(multiMatr, row3, cols3);
-
+    
     fill(matr, row, cols);
     fill(matr2, row2, cols2);
         
@@ -91,10 +90,9 @@ int main()
     print(matr2, row2, cols2);
 
     if (cols == row2) {
-
         multiMatr = multy(matr, matr2, row, row2, cols, cols2);
-
         print(multiMatr, row3, cols3);
+        delMatr(multiMatr, row3);
     }
     else {
         cout << "Errors" << endl;
@@ -103,5 +101,5 @@ int main()
 
     delMatr(matr, row);
     delMatr(matr2, row2);
-    delMatr(multiMatr, row3);
+    
 }
